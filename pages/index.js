@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { shinyauthClient } from "../lib/shinyauth";
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <button onClick={handleLogin}>Log in</button>
-      <a href="/protected">protected page</a>
+      <Link href="/protected">protected page</Link>
     </div>
   );
 }

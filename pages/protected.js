@@ -9,7 +9,7 @@ export default function Protected({ user }) {
   return (
     <div>
       <h1>secret area!</h1>
-      <p>you're logged in as email: {user.email}</p>
+      <p>you&apos;re logged in as email: {user.email}</p>
       <button onClick={handleLogout}>logout</button>
     </div>
   );
